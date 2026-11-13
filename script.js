@@ -7,8 +7,12 @@ const button = document.querySelector(".btn-sortear")
 
         const result = document.querySelector(".result")
 
-        result.innerHTML = prizeDraw
-        
+        if(inputEntre < inputE){
+            result.innerHTML = prizeDraw
+        } else {
+            result.innerHTML = "Digite um intervalo válido"
+        }
+
     }
 
 
